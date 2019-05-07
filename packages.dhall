@@ -11,6 +11,16 @@ let overrides =
           upstream.halogen-vdom // { version = "v6.1.0" }
       }
 
-let additions = {=}
+let additions =
+      { typed-array =
+          mkPackage
+          [ "prelude"
+          , "maybe"
+          , "arraybuffer-types"
+          , "functions"
+          ]
+          "https://github.com/mgmeier/purescript-typedarray.git"
+          "2.1.0"
+      }
 
 in  upstream // overrides // additions

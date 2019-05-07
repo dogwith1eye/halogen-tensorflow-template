@@ -6,5 +6,6 @@
     , "effect"
     , "aff"
     , "halogen"
+    , "typed-array"
     ]
 }
